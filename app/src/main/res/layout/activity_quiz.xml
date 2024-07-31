@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lbl_question_indicator"
+            tools:text="7/20"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            />
+           <ImageView
+               android:layout_width="25dp"
+               android:layout_height="25dp"
+               android:src="@drawable/ic_timer"
+               android:layout_centerVertical="true"
+               android:layout_toLeftOf="@+id/lbl_time_indicator"
+               app:tint="@color/blue" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/lbl_time_indicator"
+               tools:text="7:56"
+               android:paddingLeft="6dp"
+               android:textSize="20dp"
+               android:textColor="@color/black"
+               android:layout_centerVertical="true"
+               android:layout_alignParentEnd="true"
+               />
+        
+        
+    </RelativeLayout>
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:progress="50"
+        android:id="@+id/quiz_question_progress_indicator"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/lbl_main_question"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:background="@drawable/linlay_radius_corner"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textAlignment="center"
+                tools:text="What Is Meant By Android ?"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn0"
+                tools:text="Operating System"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/gray"
+                android:paddingVertical="12dp"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn1"
+                tools:text="Architacture"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/gray"
+                android:paddingVertical="12dp"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn2"
+                tools:text="tool"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/gray"
+                android:paddingVertical="12dp"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn3"
+                tools:text="All of the Above"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/gray"
+                android:paddingVertical="12dp"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_next"
+                android:text="Next"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/orange"
+                android:paddingVertical="12dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_gravity="end"
+                android:paddingHorizontal="45dp"
+
+                />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

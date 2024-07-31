@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="12dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/linlay1"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="41dp"
+            android:layout_toStartOf="@+id/linlay2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblQuizTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coading Subject"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblQuizSubTitle"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="C,C++,Java,Python,Android And  many more"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/linlay2"
+            >
+            
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_timer"
+                app:tint="@color/orange"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lbl_question_time"
+                android:text="12 Min"
+                android:textSize="15sp"
+                android:textColor="@color/blue"
+                android:textStyle="normal"
+
+                />
+
+
+
+
+        </LinearLayout>
+
+       <!-- <ImageView
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:src="@drawable/ic_next"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/linlay2"
+            />
+
+-->
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
